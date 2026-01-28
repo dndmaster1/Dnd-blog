@@ -1,32 +1,27 @@
 
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<title>Archivio D&amp;D</title>
-<style>
+    <meta charset="UTF-8">
+    <title>Archivio D&D</title>
+    <style>
         body {
-    background-image: url('dragon_background_v2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-image: url('dragon_background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #f4f4f4;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #2c3e50cc;
             color: white;
             padding: 1rem;
             text-align: center;
         }
         nav {
-            background-color: #34495e;
+            background-color: #34495ecc;
             text-align: center;
             padding: 0.5rem;
         }
@@ -37,13 +32,14 @@
         }
         .container {
             padding: 2rem;
+            background-color: #000000bb;
         }
         .post img {
             width: 36%;
             height: auto;
             display: block;
             float: left;
-            margin: 1em 1em 1em 0;
+            margin: 1em 1em 0 0;
             border: 1px solid #ccc;
         }
         .post {
@@ -51,7 +47,7 @@
             margin-bottom: 2rem;
         }
         h2 {
-            color: #2c3e50;
+            color: #f39c12;
         }
         .footer {
             background-color: #333;
@@ -60,110 +56,89 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+        .comments {
+            background-color: #1c1c1cbb;
+            padding: 1em;
+            margin-top: 1em;
+            border-left: 4px solid #f39c12;
+        }
     </style>
 </head>
 <body>
-<header>
-<h1>Archivio D&amp;D</h1>
-<p>Incantesimi, Talenti e Curiosità sul mondo di Dungeons &amp; Dragons</p>
-</header>
-<nav>
-<a href="#">Talenti</a>
-<a href="#">Incantesimi</a>
-<a href="#">FAQ</a>
-</nav>
-<div class="container"><div class="post">
-<h2>Talento: Mente su Corpo</h2>
-<img alt="Talento Mente su Corpo" src="143423.jpg"/>
-<p>Uno dei talenti più discussi tra i giocatori di D&amp;D 3.5 in Italia, "Mente su Corpo" consente a chi lancia incantesimi arcani di usare il proprio Carisma per calcolare i punti ferita bonus e i tiri salvezza su Volontà, invece della Costituzione o Saggezza.</p>
-<h3>Discussione tra giocatori</h3>
-<ul>
-<li><strong>Magus89:</strong> Qualcuno sa da quale manuale è tratto questo talento? L'ho trovato in giro ma non ne trovo traccia nei manuali ufficiali.</li>
-<li><strong>Sibylla:</strong> Anche io l’ho visto, sembra una variante regionale o qualcosa di homebrew tradotto.</li>
-<li><strong>VecchioMago:</strong> C’è chi dice venga da Dragon Magazine o da qualche supplemento non tradotto in italiano. Chi ne sa di più?</li>
-<li><strong>Fireballer:</strong> Io lo uso sempre nei miei personaggi carismatici. Lo trovo molto efficace per i maghi!</li>
-<li><strong>LunaElfica:</strong> Concordo, offre un’interessante alternativa strategica, soprattutto nelle prime fasi.</li>
-<li><strong>CompendiumMaster:</strong> In realtà esistono tre versioni con lo stesso nome, "Mente su Corpo", ma con descrizioni e effetti leggermente diversi. Attenzione: non vuol dire che una sia più corretta di un'altra, è solo che avendo lo stesso nome si può fare molta confusione dato che ci sono tanti manuali.</li>
-</ul>
+    <header>
+        <h1>Archivio D&D</h1>
+        <p>Incantesimi, Talenti e Curiosità sul mondo di Dungeons & Dragons</p>
+    </header>
+    <nav>
+        <a href="#talenti">Talenti</a>
+        <a href="#incantesimi">Incantesimi</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <div class="container">
+        <div class="post" id="talenti">
+            <h2>Talento: Mente su Corpo</h2>
+            <img src="143423.jpg" alt="Talento Mente su Corpo">
+            <p>Uno dei talenti più discussi tra i giocatori di D&D 3.5 in Italia, "Mente su Corpo" consente a chi lancia i dadi di sostituire punteggi tra mente e fisico.</p>
+            <h3>Discussione tra giocatori:</h3>
+            <ul>
+                <li><strong>Nagus89:</strong> Qualcuno sa da quale manuale è tratto questo talento? L’ho trovato in giro ma mai in una fonte ufficiale.</li>
+                <li><strong>Sibylla:</strong> Anche io l’ho visto, sembra una variante regionale o qualcosa di homebrew forse.</li>
+                <li><strong>Vechtaolog:</strong> C’è chi dice che è bilanciato, ma qualcuno sostiene rompa il gioco con certe classi!</li>
+                <li><strong>Fireballer:</strong> Io lo uso sempre nei miei personaggi carismatici. Lo trovo molto efficace.</li>
+                <li><strong>LunaElfica:</strong> Concordo, offre un’interessante alternativa strategica, soprattutto per i maghi fragili.</li>
+                <li><strong>CompendiumMaster:</strong> In realtà esistono tre versioni con lo stesso nome, “Mente su Corpo”, in manuali diversi.</li>
+            </ul>
+        </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: #f9f9f9dd; border-left: 5px solid #5555aa; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-<h4 style="margin-top: 0; color: #333399;">Lascia un commento (simulazione)</h4>
-<label for="name" style="font-weight: bold;">Nome:</label><br/>
-<input id="name" name="name" placeholder="Scrivi il tuo nome..." style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;" type="text"/><br/><br/>
-<label for="comment" style="font-weight: bold;">Commento:</label><br/>
-<textarea id="comment" name="comment" placeholder="Scrivi qui il tuo commento..." rows="4" style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;"></textarea><br/><br/>
-<button disabled="" style="padding: 0.5em 1em; background-color: #888; color: white; border: none; border-radius: 5px;">Invia (non attivo)</button>
-<p style="font-size: 0.85em; color: #666;">Questa è una simulazione: i commenti non vengono salvati.</p>
-</div>
-</div><div class="post">
-<h2>Incantesimo del Giorno: Mani Brucianti</h2>
-<p>Un classico incantesimo di 1° livello per incantatori arcani. Infligge danni da fuoco a un cono di 4,5 metri davanti al lanciatore. Ideale per le prime fasi dell'avventura.</p>
+        <div class="post">
+            <h2>Talento: Incantatore Primitivo</h2>
+            <p>Questo talento permette a un incantatore di evocare magia dalla natura stessa, aggirando le tradizionali scuole di magia.</p>
+            <h4>Discussione:</h4>
+            <ul>
+                <li><strong>Wyrmicaller:</strong> L’ho usato in una campagna ambientata nei Forgotten Realms e ha permesso al mio druido di lanciare incantesimi in forma animale!</li>
+                <li><strong>La Verde:</strong> Molto utile se il master consente componenti naturali flessibili. Lo consiglio se il tuo gruppo gioca nella giungla.</li>
+            </ul>
+        </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: #f9f9f9dd; border-left: 5px solid #5555aa; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-<h4 style="margin-top: 0; color: #333399;">Lascia un commento (simulazione)</h4>
-<label for="name" style="font-weight: bold;">Nome:</label><br/>
-<input id="name" name="name" placeholder="Scrivi il tuo nome..." style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;" type="text"/><br/><br/>
-<label for="comment" style="font-weight: bold;">Commento:</label><br/>
-<textarea id="comment" name="comment" placeholder="Scrivi qui il tuo commento..." rows="4" style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;"></textarea><br/><br/>
-<button disabled="" style="padding: 0.5em 1em; background-color: #888; color: white; border: none; border-radius: 5px;">Invia (non attivo)</button>
-<p style="font-size: 0.85em; color: #666;">Questa è una simulazione: i commenti non vengono salvati.</p>
-</div>
-</div><div class="post">
-<h2>Incantesimo: Desiderio</h2>
-<p>Uno degli incantesimi più potenti, permette di modificare la realtà stessa entro limiti precisi. Attenzione alle conseguenze non intenzionali!</p>
-<ul>
-<li><strong>Chronos:</strong> L’ho usato per salvare l’intero gruppo... ma ci siamo trovati in un piano dimensionale diverso.</li>
-<li><strong>Realista92:</strong> Lo uso solo con DM esperti. Troppo rischioso se interpretato alla lettera.</li>
-</ul>
+        <div class="post">
+            <h2>Talento: Gregario Draconico</h2>
+            <p>Talento spesso concesso ai personaggi con discendenza draconica o legati alla stirpe dei draghi. Conferisce bonus alle prove di intimidazione e resistenza al fuoco.</p>
+            <h4>Discussione:</h4>
+            <ul>
+                <li><strong>Karnax:</strong> Perfetto per uno stregone con stirpe draconica! Il mio familia ha guadagnato un piccolo soffio acido!</li>
+                <li><strong>Mystralith:</strong> Lo uso per il mio bardo dragonouched, e funziona alla grande con performance teatrali a effetto.</li>
+            </ul>
+        </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: #f9f9f9dd; border-left: 5px solid #5555aa; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-<h4 style="margin-top: 0; color: #333399;">Lascia un commento (simulazione)</h4>
-<label for="name" style="font-weight: bold;">Nome:</label><br/>
-<input id="name" name="name" placeholder="Scrivi il tuo nome..." style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;" type="text"/><br/><br/>
-<label for="comment" style="font-weight: bold;">Commento:</label><br/>
-<textarea id="comment" name="comment" placeholder="Scrivi qui il tuo commento..." rows="4" style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;"></textarea><br/><br/>
-<button disabled="" style="padding: 0.5em 1em; background-color: #888; color: white; border: none; border-radius: 5px;">Invia (non attivo)</button>
-<p style="font-size: 0.85em; color: #666;">Questa è una simulazione: i commenti non vengono salvati.</p>
-</div>
-</div><div class="post">
-<h2>Incantesimo: Permanenza</h2>
-<p>Rende permanente un incantesimo su un bersaglio. Perfetto per potenziare a lungo termine un personaggio.</p>
-<ul>
-<li><strong>Runeseeker:</strong> Mai più senza "Vista del vero" permanente!</li>
-<li><strong>Illusorius:</strong> Combina bene con "Luce" o "Armatura magica" per risparmiare slot giornalieri.</li>
-<li><strong>Talosian:</strong> Attenzione al costo in PX: usarlo troppo può rallentare la progressione.</li>
-</ul>
+        <div class="post" id="incantesimi">
+            <h2>Incantesimo del Giorno: Mani Brucianti</h2>
+            <p>Un classico incantesimo di 1° livello per incantatori arcani. Infligge danni da fuoco a un cono di 4,5 metri.</p>
+            <div class="comments">
+                <h3>Incantesimo: Desiderio</h3>
+                <p>Uno degli incantesimi più potenti, permette di modificare la realtà stessa entro limiti precisi. Attenzione agli effetti collaterali!</p>
+                <ul>
+                    <li><strong>Chronos:</strong> L’ho usato per salvare l’intero gruppo... ma ci siamo trovati in un piano di esistenza differente. Cose da DM esperti. Troppo rischioso se interpretato alla lettera!</li>
+                    <li><strong>Realista02:</strong> Lo uso solo come DM per spingere trame narrative.</li>
+                </ul>
+            </div>
+            <div class="comments">
+                <h3>Incantesimo: Permanenza</h3>
+                <p>Permette un incantesimo su un bersaglio. Perfetto per potenziare a lungo termine un personaggio.</p>
+                <ul>
+                    <li><strong>Runeseeker:</strong> Mai più senza “Vista del vero” permanente!</li>
+                    <li><strong>Talosian:</strong> Attenzione al costo in PX: usarlo troppo può rallentare la progressione.</li>
+                </ul>
+            </div>
+        </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: #f9f9f9dd; border-left: 5px solid #5555aa; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-<h4 style="margin-top: 0; color: #333399;">Lascia un commento (simulazione)</h4>
-<label for="name" style="font-weight: bold;">Nome:</label><br/>
-<input id="name" name="name" placeholder="Scrivi il tuo nome..." style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;" type="text"/><br/><br/>
-<label for="comment" style="font-weight: bold;">Commento:</label><br/>
-<textarea id="comment" name="comment" placeholder="Scrivi qui il tuo commento..." rows="4" style="width: 100%; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc;"></textarea><br/><br/>
-<button disabled="" style="padding: 0.5em 1em; background-color: #888; color: white; border: none; border-radius: 5px;">Invia (non attivo)</button>
-<p style="font-size: 0.85em; color: #666;">Questa è una simulazione: i commenti non vengono salvati.</p>
-</div>
-</div><div class="post">
-<h2>FAQ</h2>
-<p><strong>D: Questo sito è ufficiale?</strong><br/>R: No, è una raccolta informativa anonima per scopi di archivio e discussione tra appassionati.</p>
-<p><strong>D: Posso contribuire?</strong><br/>R: Al momento il sito è statico e non prevede contributi esterni.</p>
-</div></div>
-<div class="footer">
-        “La conoscenza è il primo passo verso il potere.” — Raccolta di appunti arcani
+        <div class="post" id="faq">
+            <h2>FAQ</h2>
+            <p><strong>Q: Questo sito è ufficiale?</strong><br><strong>A:</strong> No, è una raccolta informativa per scopi di archivio e passione.</p>
+            <p><strong>Q: Posso contribuire?</strong><br><strong>A:</strong> Al momento il sito è statico e non prevede contributi esterni.</p>
+        </div>
+    </div>
+    <div class="footer">
+        “Contenuti ispirati al mondo di Dungeons & Dragons, basati su fonti ufficiali e supplementi di gioco.”
     </div>
 </body>
 </html>
-<section class="post">
-<h2>Talento: Incantatore Primitivo</h2>
-<p>Questo talento permette a un incantatore di evocare magie dalla natura stessa, aggirando le tradizionali scuole di magia. È particolarmente apprezzato dai druidi e ranger, e offre maggiore flessibilità nella preparazione di incantesimi.</p>
-<h4>Discussione</h4>
-<p><strong>Wyrmcaller:</strong> L’ho usato in una campagna ambientata nei Forgotten Realms e ha permesso al mio druido di lanciare magie che normalmente non avrebbe potuto usare!</p>
-<p><strong>Nym la Verde:</strong> Molto utile se il master consente componenti naturali flessibili. Lo consiglio se il tuo personaggio ha un legame con la natura primitiva.</p>
-</section>
-<section class="post">
-<h2>Talento: Gregario Draconico</h2>
-<p>Talento spesso concesso ai personaggi con discendenza draconica o legati alla stirpe dei draghi. Conferisce bonus alle prove di Intimidire e accesso a un famiglio potenziato con tratti draconici.</p>
-<h4>Discussione</h4>
-<p><strong>Karnax:</strong> Perfetto per uno stregone con stirpe draconica! Il mio famiglio ha guadagnato un piccolo soffio di fuoco grazie a questo talento.</p>
-<p><strong>Mystralith:</strong> Lo uso per il mio bardo dragontouched, e funziona alla grande con performance teatrali a tema draconico!</p>
-</section>
